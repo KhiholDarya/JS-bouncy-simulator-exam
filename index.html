@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bouncy Simulator</title>
+	<style>
+		body {
+			 font-family: Arial, sans-serif;
+			 display: flex;
+			 flex-direction: column;
+			 justify-content: center;
+			 align-items: center;
+			 height: 100vh;
+			 margin: 0;
+			 background-color: #f0f0f0;
+		}
+		h1{
+			padding-top: 70px;
+		}
+		.grid {
+			 display: grid;
+			 grid-template-columns: repeat(12, 40px);
+			 gap: 2px;
+			 margin-top: 20px;
+			 padding-bottom: 40px;
+			 
+		}
+
+		.cell {
+			 width: 40px;
+			 height: 40px;
+			 display: flex;
+			 align-items: center;
+			 justify-content: center;
+			 font-size: 16px;
+			 font-weight: bold;
+			 border-radius: 4px;
+		}
+
+		.wall {
+			 background-color: #333;
+			 color: #fff;
+		}
+
+		.ball {
+			 background-color: red;
+			 color: #fff;
+		}
+
+		.redirect {
+			 background-color: yellow;
+			 color: #000;
+		}
+  </style>
+</head>
+
+<body>
+	<h1>Bouncy Simulator</h1>
+	<div id="board" class="grid"></div>
+	<script src="exampleInput.js" type="module"></script>
+	<script src="bouncySimulator.js" type="module"></script>
+</body>
+
+</html>
